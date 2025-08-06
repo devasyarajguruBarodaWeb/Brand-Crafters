@@ -1,247 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brand Crafters - Where Real Talent Goes Viral</title>
-    <meta name="description" content="From Small Towns to Big Brands – we're building a movement for Tier-2/Tier-3 creators. Skills over follower count.">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">
-                <h1>Brand Crafters</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Brand Crafters</h2>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#journey">Journey</a>
+          <a href="#stories">Stories</a>
+          <a href="#community">Community</a>
+          <button class="nav-cta">Join Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="typewriter">Where Real Talent Goes Viral</span>
+        </h1>
+        <p class="hero-subtitle fade-in-up">Transform your creative passion into a thriving brand with our proven system</p>
+        <div class="hero-buttons fade-in-up-delayed">
+          <button class="btn-primary">Start Your Journey</button>
+          <button class="btn-secondary">Watch Success Stories</button>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual slide-in-left">
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="Creative team collaboration" />
+          </div>
+          <div class="about-content slide-in-right">
+            <h2>Movement, Not a Scheme</h2>
+            <p>We're building a community where authentic creators thrive. No empty promises, no get-rich-quick schemes – just proven strategies that turn your passion into sustainable success.</p>
+            <div class="about-features">
+              <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">
+                  <h3>Targeted Strategy</h3>
+                  <p>Custom roadmaps for your unique creative voice</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <div class="feature-text">
+                  <h3>Rapid Growth</h3>
+                  <p>See results in weeks, not years</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-text">
+                  <h3>Community Support</h3>
+                  <p>Connect with fellow creators on the same journey</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creator Journey Timeline -->
+    <section id="journey" class="journey">
+      <div class="container">
+        <h2 class="section-title">Your Creator Journey</h2>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-item" data-step="1">
+            <div class="timeline-circle">1</div>
+            <div class="timeline-content">
+              <h3>Discover Your Voice</h3>
+              <p>Find your unique creative angle</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-step="2">
+            <div class="timeline-circle">2</div>
+            <div class="timeline-content">
+              <h3>Build Your Brand</h3>
+              <p>Craft compelling content that converts</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-step="3">
+            <div class="timeline-circle">3</div>
+            <div class="timeline-content">
+              <h3>Grow Your Audience</h3>
+              <p>Scale with proven viral strategies</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-step="4">
+            <div class="timeline-circle">4</div>
+            <div class="timeline-content">
+              <h3>Monetize Your Talent</h3>
+              <p>Turn followers into sustainable income</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-step="5">
+            <div class="timeline-circle">5</div>
+            <div class="timeline-content">
+              <h3>Scale & Expand</h3>
+              <p>Build your creative empire</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready to Transform Your Creative Passion?</h2>
+        <p>Join thousands of creators who've already made the leap</p>
+        <div class="cta-buttons">
+          <button class="btn-primary pulse">Get Started Now</button>
+          <button class="btn-outline">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Stories - Testimonial Carousel -->
+    <section id="stories" class="stories">
+      <div class="container">
+        <h2 class="section-title">Real Stories, Real Success</h2>
+        <div class="carousel">
+          <input type="radio" name="testimonial" id="testimonial-1" checked>
+          <input type="radio" name="testimonial" id="testimonial-2">
+          <input type="radio" name="testimonial" id="testimonial-3">
+          
+          <div class="carousel-container">
+            <div class="carousel-item testimonial-1">
+              <div class="testimonial">
+                <img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg" alt="Sarah Creative" class="testimonial-image">
+                <div class="testimonial-content">
+                  <blockquote>"From 100 followers to 100K in 6 months. Brand Crafters didn't just teach me tactics – they helped me find my authentic voice."</blockquote>
+                  <cite>
+                    <strong>Sarah Chen</strong>
+                    <span>Digital Artist & Content Creator</span>
+                  </cite>
+                </div>
+              </div>
             </div>
             
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#workshops">Workshops</a></li>
-                <li><a href="#creator-journey">Creator Journey</a></li>
-                <li><a href="#contests">Contests</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="carousel-item testimonial-2">
+              <div class="testimonial">
+                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="Marcus Creator" class="testimonial-image">
+                <div class="testimonial-content">
+                  <blockquote>"I went from making $0 from my music to $5K monthly. The community support here is unmatched."</blockquote>
+                  <cite>
+                    <strong>Marcus Rodriguez</strong>
+                    <span>Musician & Producer</span>
+                  </cite>
+                </div>
+              </div>
+            </div>
             
-            <button class="cta-button primary">Start Your Journey</button>
-            
-            <!-- Mobile Menu Toggle -->
-            <div class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">Where Real Talent Goes Viral</h1>
-                        <p class="hero-subtitle">From Small Towns to Big Brands – we're building a movement, not a scheme.</p>
-                        
-                        <div class="hero-buttons">
-                            <button class="btn btn-primary">Start Your Creator Journey</button>
-                            <button class="btn btn-secondary">Learn About Our Workshop</button>
-                            <button class="btn btn-accent">Season 1 Contest</button>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-image">
-                        <div class="hero-visual">
-                            <div class="creator-icons">
-                                <div class="creator-icon">📱</div>
-                                <div class="creator-icon">🎨</div>
-                                <div class="creator-icon">📸</div>
-                                <div class="creator-icon">🎬</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="carousel-item testimonial-3">
+              <div class="testimonial">
+                <img src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg" alt="Emma Creator" class="testimonial-image">
+                <div class="testimonial-content">
+                  <blockquote>"The strategies are practical and actually work. My engagement increased 300% in just 8 weeks."</blockquote>
+                  <cite>
+                    <strong>Emma Thompson</strong>
+                    <span>Lifestyle Content Creator</span>
+                  </cite>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+          
+          <div class="carousel-dots">
+            <label for="testimonial-1" class="dot"></label>
+            <label for="testimonial-2" class="dot"></label>
+            <label for="testimonial-3" class="dot"></label>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- About the Movement -->
-        <section class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Why Brand Crafters?</h2>
-                        <p>We believe in empowering creators from Tier-2 and Tier-3 cities who have real talent but lack the platform to showcase it. Our community focuses on building genuine skills and authentic connections rather than chasing vanity metrics.</p>
-                        
-                        <div class="highlight-box">
-                            <h3>Skills > Follower Count</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="about-visual">
-                        <div class="community-illustration">
-                            <div class="community-circles">
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                            </div>
-                            <h4>Growing Community</h4>
-                        </div>
-                    </div>
-                </div>
+    <!-- Community & Virality Grid -->
+    <section id="community" class="community">
+      <div class="container">
+        <h2 class="section-title">Join Our Thriving Community</h2>
+        <div class="community-grid">
+          <div class="community-card">
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Weekly Challenge">
+            <div class="card-content">
+              <h3>Weekly Challenges</h3>
+              <p>Push your creative boundaries with our viral challenges</p>
+              <div class="card-stats">
+                <span class="stat">2.5K participants</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Creator Journey Timeline -->
-        <section id="creator-journey" class="journey-section">
-            <div class="container">
-                <h2>Your Journey Starts Here</h2>
-                
-                <div class="journey-timeline">
-                    <div class="journey-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Sign Up</h3>
-                            <p>Join our community of passionate creators from small towns</p>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Join a Workshop</h3>
-                            <p>Learn from industry experts and fellow creators</p>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Become a Creator Advocate</h3>
-                            <p>Help others while building your own brand</p>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Enter Contests</h3>
-                            <p>Showcase your skills in exciting challenges</p>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h3>Build Your Brand</h3>
-                            <p>Transform your passion into a sustainable career</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          
+          <div class="community-card">
+            <img src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg" alt="Creator Shoutouts">
+            <div class="card-content">
+              <h3>Creator Shoutouts</h3>
+              <p>Get featured and gain exposure to our entire network</p>
+              <div class="card-stats">
+                <span class="stat">50+ features monthly</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Real Stories Section -->
-        <section class="stories-section">
-            <div class="container">
-                <h2>From Small Towns to Big Screens</h2>
-                
-                <div class="stories-grid">
-                    <div class="story-card">
-                        <div class="creator-photo">A</div>
-                        <h4>Anita Sharma</h4>
-                        <p class="creator-location">Indore, MP</p>
-                        <blockquote>"Brand Crafters helped me turn my passion for photography into a thriving business."</blockquote>
-                        <div class="achievement">Gained 50k+ views through Season 1</div>
-                    </div>
-                    
-                    <div class="story-card">
-                        <div class="creator-photo">R</div>
-                        <h4>Rohit Kumar</h4>
-                        <p class="creator-location">Patna, Bihar</p>
-                        <blockquote>"The workshops gave me skills that no YouTube tutorial could teach."</blockquote>
-                        <div class="achievement">Landed brand collaborations worth ₹2L+</div>
-                    </div>
-                    
-                    <div class="story-card">
-                        <div class="creator-photo">P</div>
-                        <h4>Priya Mehta</h4>
-                        <p class="creator-location">Vadodara, Gujarat</p>
-                        <blockquote>"From 500 followers to 25k in 6 months, all thanks to the community support."</blockquote>
-                        <div class="achievement">Featured in major brand campaigns</div>
-                    </div>
-                </div>
+          </div>
+          
+          <div class="community-card">
+            <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg" alt="Collaboration Hub">
+            <div class="card-content">
+              <h3>Collaboration Hub</h3>
+              <p>Connect and create with like-minded creators</p>
+              <div class="card-stats">
+                <span class="stat">200+ collabs made</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Community & Challenges -->
-        <section id="community" class="community-section">
-            <div class="container">
-                <h2>We Grow Together</h2>
-                
-                <div class="community-highlights">
-                    <div class="highlight-item">
-                        <div class="highlight-icon">🎉</div>
-                        <h3>Weekly Shoutouts</h3>
-                        <p>Get featured and gain recognition for your work</p>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">🤝</div>
-                        <h3>Creator-led Collabs</h3>
-                        <p>Partner with fellow creators on exciting projects</p>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">🎨</div>
-                        <h3>UGC Challenges</h3>
-                        <p>Participate in brand challenges and win prizes</p>
-                    </div>
-                </div>
-                
-                <div class="collaboration-grid">
-                    <div class="collab-post">Campaign #1</div>
-                    <div class="collab-post">Workshop Highlight</div>
-                    <div class="collab-post">Creator Spotlight</div>
-                    <div class="collab-post">Challenge Winner</div>
-                </div>
+          </div>
+          
+          <div class="community-card">
+            <img src="https://images.pexels.com/photos/3184421/pexels-photo-3184421.jpeg" alt="Expert Masterclasses">
+            <div class="card-content">
+              <h3>Expert Masterclasses</h3>
+              <p>Learn from industry leaders and successful creators</p>
+              <div class="card-stats">
+                <span class="stat">Weekly sessions</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Call-to-Action Banner -->
-        <section class="cta-banner">
-            <div class="container">
-                <h2>No big city? No problem. Start your creator journey today.</h2>
-                <button class="btn btn-cta">Join the Movement</button>
+          </div>
+          
+          <div class="community-card">
+            <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg" alt="Success Analytics">
+            <div class="card-content">
+              <h3>Success Analytics</h3>
+              <p>Track your growth with detailed insights and metrics</p>
+              <div class="card-stats">
+                <span class="stat">Real-time data</span>
+              </div>
             </div>
-        </section>
-    </main>
+          </div>
+          
+          <div class="community-card">
+            <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg" alt="24/7 Support">
+            <div class="card-content">
+              <h3>24/7 Support</h3>
+              <p>Get help whenever you need it from our expert team</p>
+              <div class="card-stats">
+                <span class="stat">Always available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#terms">Terms</a>
-                    <a href="#privacy">Privacy</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                
-                <div class="social-icons">
-                    <a href="#" aria-label="Instagram">📸</a>
-                    <a href="#" aria-label="YouTube">📺</a>
-                    <a href="#" aria-label="Twitter">🐦</a>
-                    <a href="#" aria-label="LinkedIn">💼</a>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>Brand Crafters</h3>
+              <p>Where real talent goes viral</p>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Brand Crafters. All rights reserved. Building creators, not followers.</p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <span class="social-icon">📸</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="social-icon">🐦</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="social-icon">📹</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="social-icon">💼</span>
+              </a>
             </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#journey">Creator Journey</a></li>
+              <li><a href="#stories">Success Stories</a></li>
+              <li><a href="#community">Community</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Stay Updated</h4>
+            <p>Get the latest tips and strategies delivered to your inbox</p>
+            <div class="newsletter">
+              <input type="email" placeholder="Your email address" class="newsletter-input">
+              <button class="newsletter-btn">Subscribe</button>
+            </div>
+          </div>
         </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Brand Crafters. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
