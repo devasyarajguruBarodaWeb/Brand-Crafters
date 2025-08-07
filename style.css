@@ -120,7 +120,7 @@ body {
 .hero {
   height: 100vh;
   background: linear-gradient(135deg, rgba(55, 66, 162, 0.8), rgba(226, 169, 29, 0.6)),
-              url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg') center/cover;
+              url('customer-experience.jpg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +140,7 @@ body {
 .hero-content {
   text-align: center;
   z-index: 2;
-  max-width: 800px;
+  width: 100%;
   padding: 0 20px;
 }
 
@@ -152,20 +152,20 @@ body {
   line-height: 1.1;
 }
 
+/* --- Typewriter Animation Fix --- */
 .typewriter {
   display: inline-block;
   overflow: hidden;
   border-right: 3px solid var(--color-accent);
   white-space: nowrap;
-  animation: typewriter 4s steps(26, end), blink 0.75s step-end infinite;
+  animation: typewriter 4s steps(29, end), blink 0.75s step-end infinite;
 }
-
 @keyframes typewriter {
   0% {
-    width: 0;
+    clip-path: inset(0 100% 0 0);
   }
   100% {
-    width: 26ch;
+    clip-path: inset(0 0% 0 0);
   }
 }
 
