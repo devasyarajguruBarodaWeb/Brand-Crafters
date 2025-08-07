@@ -116,6 +116,16 @@ body {
   box-shadow: var(--shadow);
 }
 
+/* Active Navigation Link */
+.nav-links a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 /* Hero Slider Styles */
 .hero-slider {
   position: absolute;

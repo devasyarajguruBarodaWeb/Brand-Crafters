@@ -1,3 +1,80 @@
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: var(--transition);
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  
+  .nav-logo h2 {
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: var(--color-primary);
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-cta {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .nav-cta:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+
 .about-hero-slider {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -29,6 +106,18 @@
   opacity: 0;
   animation: fadeInUp 1s ease 3s forwards;
 }
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-title
+  {
+    max-width: 200px;
+  }
 
 .stat-item {
   text-align: center;
