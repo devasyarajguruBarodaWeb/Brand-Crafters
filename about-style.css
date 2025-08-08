@@ -113,11 +113,41 @@
     width: 100%;
     padding: 0 20px;
   }
-
-  .hero-title
-  {
-    max-width: 200px;
+  
+  .hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
   }
+  
+  /* --- Typewriter Animation Fix --- */
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 3px solid var(--color-accent);
+    white-space: nowrap;
+    animation: typewriter 4s steps(29, end), blink 0.75s step-end infinite;
+  }
+  @keyframes typewriter {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    100% {
+      clip-path: inset(0 0% 0 0);
+    }
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      border-color: transparent;
+    }
+    51%, 100% {
+      border-color: var(--color-accent);
+    }
+  }
+  
 
 .stat-item {
   text-align: center;
